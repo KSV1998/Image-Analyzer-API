@@ -1,0 +1,40 @@
+cabal-version:      2.4
+name:               imageAnalyzer
+version:            0.1.0.0
+maintainer:         saivenkatesh13@gmail.com
+extra-source-files: CHANGELOG.md
+
+executable imageAnalyzer
+    main-is:          Main.hs
+    other-modules:    Types
+                      Network
+                      ProgramOptions
+    build-depends:    base ^>=4.14.3.0
+                      , servant-server
+                      , warp
+                      , aeson
+                      , postgresql-simple
+                      , http-client
+                      , http-client-tls
+                      , http-conduit
+                      , text
+                      , bytestring
+                      , uuid
+                      , safe
+                      , extra
+                      , containers
+                      , optparse-applicative
+    ghc-options:    -Wall
+                    -Wno-orphans
+    default-extensions:
+                    ExplicitNamespaces
+                    DeriveAnyClass
+                    DeriveGeneric
+                    ViewPatterns
+                    DataKinds
+                    OverloadedStrings
+                    TypeOperators
+                    DuplicateRecordFields
+                    NamedFieldPuns
+    hs-source-dirs:   app
+    default-language: Haskell2010
