@@ -1,6 +1,7 @@
 # Pre-Requisites
 
 1. Postgress service.
+2. Imagga Account's Auth Key.
 
 # Build
 
